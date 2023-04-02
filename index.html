@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/colors/color-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- alternate css -->
+    <link
+      rel="stylesheet"
+      href="/css/colors/color-1.css"
+      class="alternate-css"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/colors/color-2.css"
+      class="alternate-css"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/colors/color-3.css"
+      class="alternate-css"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="/css/colors/color-4.css"
+      class="alternate-css"
+      title="color-4"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/colors/color-5.css"
+      class="alternate-css"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="./css/style-changer.css" />
+  </head>
+  <body class="dark">
+    <!-- MAIN CONTAINER START -->
+    <div class="main-container">
+      <!-- ASIDE START  -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#home"><span>G</span>KS</a>
+        </div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li>
+            <a
+              href="#home"
+              class="body-section"
+              onclick="setActiveSection('home')"
+              title="home"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="body-section incative"
+              onclick="setActiveSection('about')"
+              title="about"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="body-section incative"
+              onclick="setActiveSection('skills')"
+              title="skills"
+              >SKILLS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="body-section incative"
+              onclick="setActiveSection('projects')"
+              title="projects"
+              >PROJECTS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="body-section incative"
+              onclick="setActiveSection('contact')"
+              title="contact"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+        <div class="style-changer">
+          <div class="toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+          </div>
+          <div class="dark-mode s-icon">
+            <i class="fas fa-moon"></i>
+          </div>
+          <h4>Colors</h4>
+          <div class="colors">
+            <span class="color-1" onclick="SetActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="SetActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="SetActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="SetActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="SetActiveStyle('color-5')"></span>
+          </div>
+        </div>
+        <div class="linebt"></div>
+      </div>
+      <!-- ASIDE END -->
+
+      <!-- MAIN CONTENT START -->
+      <div class="main-content">
+        <!-- HOME SECTION START -->
+        <section class="home section" id="home" title="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <canvas id="container" width="2000" height="2000"></canvas>
+                <h3 class="my-profession">
+                  <span class="typing">. Web Devloper</span>
+                </h3>
+                <!-- <h3 class="hello">I'm <span class="name">GIRIRAJ KRISHNA SHARMA</span></h3> -->
+                <!-- <a href="#contact" class="btn hire-me" id="my-button" title="contact">Contact Me</a> -->
+              </div>
+              <div class="home-image padd-15">
+                <img src="/images/my-image.png" alt="my-image" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- HOME SECTION END -->
+
+        <!-- ABOUT SECTION START -->
+        <section class="about section hidden" id="about" title="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>GIRIRAJ KRISHNA SHARMA</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text">
+                    <h3>Coding || Web Devlopnment || Graphics || UI/UX</h3>
+                    <p>
+                      hii!! I'am Giriraj I am 21 years old. <br /><br />
+                      For the past 5 years, I’ve been learning new skills and
+                      polising them. <br /><br />
+                      I have some background in Web Devlopnment , Graphics
+                      designing , Coding in C++/Python/Java , UI/UX and persuing
+                      my bachelor in B.Tech CSE. What really got me into the
+                      field, though, is simply my intest. <br />
+                      <br />
+                      Moving forward, I hope to expand my experience across
+                      different industries. Particularly fintech, which is why
+                      I’m interested in this field...
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <div class="info-items padd-15">
+                        <p>Birthday : <span>24th June 2001</span></p>
+                      </div>
+                      <div class="info-items padd-15">
+                        <p>AGE : <span>21</span></p>
+                      </div>
+                      <div class="info-items padd-15">
+                        <p>Email : <span>girirajksharma5@gmail.com</span></p>
+                      </div>
+                      <div class="info-items padd-15">
+                        <p>Degree : <span>persuing B.Tech CSE</span></p>
+                      </div>
+                      <div class="info-items padd-15">
+                        <p>Phone : <span>7606910441</span></p>
+                      </div>
+                      <div class="info-items padd-15">
+                        <p>City : <span>Bhubneshwar</span></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a
+                          href="/cv/RESUME.png"
+                          download="GIRIRAJ_KRISHNA_SHARMA_RESUME"
+                          class="btn"
+                          >Download CV</a
+                        >
+                        <a
+                          href="#contact"
+                          class="btn hire-me"
+                          id="my-button"
+                          title="contact"
+                          >Contact Me</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <div class="skill-item padd-15">
+                        <h5>C/C++</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 85%"></div>
+                          <div class="skill-percentage">85%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Web-Devlopment</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 75%"></div>
+                          <div class="skill-percentage">75%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Python</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 80%"></div>
+                          <div class="skill-percentage">80%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>UI/UX</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 80%"></div>
+                          <div class="skill-percentage">80%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row education-control">
+                  <div class="education padd-15">
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <div class="header">
+                            <h3 class="title">Education</h3>
+                          </div>
+
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2017
+                            </h3>
+                            <h4 class="timeline-title">Class 10</h4>
+                            <p class="timeline-text">
+                              Completed from Modern Indian School Kathmandu,
+                              Nepal
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2019
+                            </h3>
+                            <h4 class="timeline-title">Class 12</h4>
+                            <p class="timeline-text">
+                              Completed from Modern Indian School Kathmandu,
+                              Nepal
+                            </p>
+                          </div>
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>
+                              2024
+                            </h3>
+                            <h4 class="timeline-title">B.tech CSE</h4>
+                            <p class="timeline-text">
+                              Currently Persuing from Kaling Institute of
+                              Industrial technology ,Bhubneshwar India
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
+        <!-- SKILLS SECTION START -->
+        <section class="skills section hidden" id="skills" title="skills">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>SKILLS</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="skill-item padd-15">
+                <div class="inner-skill-item">
+                  <div class="icon">
+                    <i class="fa fa-code-commit"> </i>
+                  </div>
+                  <h4>C/C++ || PYTHON</h4>
+                  <p>
+                    I have very Intest in coding at first I faced issues but
+                    overtime with practice today its one of my strongest fields.
+                    I have been coding since the past 5 years.
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item padd-15">
+                <div class="inner-skill-item">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"> </i>
+                  </div>
+                  <h4>HTML-5 || CSS || JS</h4>
+                  <p>
+                    Its fun when you know these languages. Infact i was able to
+                    make this web site because I had learnt these language. I
+                    have been making and designing webpages form the past 3
+                    years
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item padd-15">
+                <div class="inner-skill-item">
+                  <div class="icon">
+                    <i class="fa fa-palette"> </i>
+                  </div>
+                  <h4>PHOTOSHOP || ILLUSTRATOR || XD</h4>
+                  <p>
+                    who doesnot like nice asthetics and awesome looking art and
+                    graphics. its fun to bring out my imaginations
+                  </p>
+                </div>
+              </div>
+              <div class="skill-item padd-15">
+                <div class="inner-skill-item">
+                  <div class="icon">
+                    <i class="fa fa-video"> </i>
+                  </div>
+                  <h4>PREMIER PRO || AFTER EFFECTS</h4>
+                  <p>
+                    looking a cool youtube videos and animations sparked a
+                    intrest in me. whenever I get an oppurtunity I dont miss my
+                    chance to edit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS SECTION END -->
+
+        <!-- PROJECTS SECTION START -->
+        <section class="project section hidden" id="projects" title="projects">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>PROJECTS</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="project-heading">
+                <h2>My last Projects :</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="project-item">
+                <a href="add-link-here">
+                  <div class="inner-project-item shadow-dark">
+                    <div class="project-image-link">
+                      <img src="" alt="project-image" />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsa, molestiae nisi temporibus voluptas incidunt maxime
+                      necessitatibus quae repellat ex esse, a quo ea dolorum
+                      consequatur cum sequi perferendis! Possimus similique
+                      magni animi adipisci quidem provident. Excepturi maiores
+                      veritatis esse tempore atque! Sapiente provident quos
+                      nulla?
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-item">
+                <a href="add-link-here">
+                  <div class="inner-project-item shadow-dark">
+                    <div class="project-image-link">
+                      <img src="" alt="project-image" />
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ipsa cupiditate rem inventore, praesentium, eaque ea ad
+                      excepturi facere nesciunt iste quidem, beatae doloremque
+                      doloribus fuga provident autem rerum optio nam.
+                      Voluptatibus, magnam quisquam? Molestiae maiores
+                      necessitatibus accusantium laborum nulla eligendi illo
+                      iusto odio. Magnam, accusamus.
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-item">
+                <a href="add-link-here">
+                  <div class="inner-project-item shadow-dark">
+                    <div class="project-image-link">
+                      <img src="" alt="project-image" />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur sed odit voluptatum hic asperiores natus ipsum
+                      iusto minima adipisci totam illum, porro cumque esse.
+                      Dicta, iure in quod magni, possimus molestiae temporibus
+                      aliquid accusantium eligendi explicabo omnis vel nisi
+                      numquam esse rerum quos beatae Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Hic minus atque recusandae
+                      maiores laboriosam. Earum in placeat quis autem porro!
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-item">
+                <a href="add-link-here">
+                  <div class="inner-project-item shadow-dark">
+                    <div class="project-image-link">
+                      <img src="" alt="project-image" />
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur sed odit voluptatum hic asperiores natus ipsum
+                      iusto minima adipisci totam illum, porro cumque esse.
+                      Dicta, iure in quod magni, possimus molestiae temporibus
+                      aliquid accusantium eligendi explicabo omnis vel nisi
+                      numquam esse rerum quos beatae ab. Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Praesentium eaque optio
+                      reiciendis iusto porro est, harum vel eos repellendus
+                      laboriosam!
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PROJECTS SECTION END -->
+
+        <!-- CONTACT ME SECTION START-->
+        <section class="contact section hidden" id="contact" title="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>CONTACT ME</h2>
+              </div>
+            </div>
+            <h3 class="contact-title">Do You Have Any Questions ?</h3>
+            <div class="row">
+              <div class="contact-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>CALL ME AT</h4>
+                <p>+91 7606910441</p>
+              </div>
+              <div class="contact-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>LOCATION</h4>
+                <p>Bhubneshwar , INDIA</p>
+              </div>
+              <div class="contact-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>EMAIL</h4>
+                <p>girirajksharma5@gmail.com</p>
+              </div>
+            </div>
+            <h3 class="contact-title">send me an email</h3>
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Email-ID"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Text"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONTACT ME SECTION END -->
+      </div>
+      <!-- MAIN CONTENT END -->
+    </div>
+    <!-- MAIN CONTAINER END-->
+    <!-- JS LINKS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/style-changer.js"></script>
+  </body>
+</html>
