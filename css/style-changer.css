@@ -1,0 +1,87 @@
+.style-changer
+{
+    position: fixed;
+    left: -310px;
+    bottom: 30px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100px);
+}
+.style-changer.open{
+    transform: translateX(160%);
+}
+.style-changer .s-icon
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    left: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-left: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.style-changer .s-icon i
+{
+    line-height: 40px;
+}
+.style-changer .toggler
+{
+    top: 0;
+}
+.style-changer .dark-mode
+{
+    top: 57px;
+}
+.style-changer h4
+{
+    margin: 0 0 10px;
+    color: var(--text-black-700);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.style-changer .colors
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.style-changer .colors span
+{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+}
+.style-changer .colors .color-1
+{
+    background: #33cccc;
+}
+.style-changer .colors .color-2
+{
+    background: #FF00FF;
+}
+.style-changer .colors .color-3
+{
+    background: #ff6600;;
+}
+.style-changer .colors .color-4
+{
+    background: #ff0066;
+}
+.style-changer .colors .color-5
+{
+    background: #7575a3;
+}
